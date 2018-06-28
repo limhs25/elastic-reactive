@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid whitesmoke;
+  margin: 5px 50px 10px 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action {
+  cursor: pointer;
+}

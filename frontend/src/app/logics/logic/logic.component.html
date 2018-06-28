@@ -1,0 +1,11 @@
+<mat-card class="wrapper">
+  <mat-card-title class="header">
+    <span>{{logic.logic}}</span>
+    <mat-icon (click)="delete(logic.id)" class="action">delete</mat-icon>
+  </mat-card-title>
+  <mat-card-content>
+    <mat-slide-toggle [(ngModel)]="logic.active" (change)="update(logic.id)" labelPosition="before">Active</mat-slide-toggle>
+    <div>Share : {{logic.share}}</div>
+    <div>Service Name : {{logic.service}}</div>
+  </mat-card-content>
+</mat-card>

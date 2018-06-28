@@ -1,0 +1,18 @@
+server:
+  compression:
+    enabled: true
+elasticsearch:
+  cluster-nodes: localhost:9200
+  cluster-name: elasticsearch
+---
+spring:
+  profiles: staging
+elasticsearch:
+  cluster-nodes: stg-aeaselelastic101z.stg.jp.local:9200
+  cluster-name: easel-es-stg
+---
+spring:
+  profiles: prod
+elasticsearch:
+  cluster-nodes: deaselelastic101z.prod.jp.local:9200,deaselelastic102z.prod.jp.local:9200,deaselelastic103z.prod.jp.local:9200
+  cluster-name: easel-es-prod

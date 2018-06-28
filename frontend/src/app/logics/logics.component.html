@@ -1,0 +1,7 @@
+<app-logic-search></app-logic-search>
+
+<app-logic *ngFor="let logic of logics" [logic]="logic" (deleted)="onDeleted($event)"></app-logic>
+
+<button type="button" mat-fab routerLink="/logic" class="actions">
+  <mat-icon aria-label="Create new Logic">add</mat-icon>
+</button>

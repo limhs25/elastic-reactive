@@ -1,0 +1,23 @@
+<mat-card class="wrapper">
+  <mat-card-title>
+    New Logic form
+  </mat-card-title>
+  <mat-card-content>
+    <form autocomplete="off">
+      <mat-checkbox [(ngModel)]="logic.active" class="field" name="active">Active</mat-checkbox>
+      <mat-form-field class="field">
+        <input matInput [(ngModel)]="logic.service" placeholder="Service" name="service">
+      </mat-form-field>
+      <mat-form-field class="field">
+        <input matInput [(ngModel)]="logic.share" placeholder="Share" type="number" min="0" max="100" name="share">
+      </mat-form-field>
+      <mat-form-field class="field">
+        <input matInput [(ngModel)]="logic.logic" placeholder="Logic Name" name="logic">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button type="button" mat-button (click)="save()">SAVE</button>
+    <button type="button" mat-button routerLink="/logics">RETURN</button>
+  </mat-card-actions>
+</mat-card>
